@@ -21,6 +21,7 @@ jobs:
       matrix:
         os: [ubuntu-20.04]
         qbt_gui: ["GUI=ON", "GUI=OFF"]
+        libtorrent_version: ["v1.2.14", "RC_1_2", "v2.0.4", "RC_2_0"]
       fail-fast: false
 
     runs-on: ${{ matrix.os }}
@@ -42,10 +43,20 @@ jobs:
           libboost-dev libboost-chrono-dev libboost-random-dev libboost-system-dev \
           libqt5svg5-dev qtbase5-dev qttools5-dev
 
-    - name: install libtorrent from source
+    - name: get libtorrent source code
       run: |
         git clone https://github.com/arvidn/libtorrent && cd libtorrent
-        git checkout ${{ env.LIBTORRENT_VERSION_TAG }}
+        git checkout ${{ matrix.libtorrent_version }}
+
+    - name: checkout libtorrent 2.x submodules
+      if: ${{ startsWith(matrix.libtorrent_version, 'RC_2_') || startsWith(matrix.libtorrent_version, 'v2.') }}
+      run: |
+        cd libtorrent
+        git submodule update --init --recursive
+
+    - name: build and install libtorrent from source
+      run: |
+        cd libtorrent
         cmake -B cmake-build-dir -G "Ninja" \
           -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo \
           -Ddeprecated-functions=OFF \
@@ -68,7 +79,7 @@ jobs:
     - name: upload artifact as zip
       uses: actions/upload-artifact@v2
       with:
-        name: qBittorrent-CI_${{ matrix.os }}-x64_${{ matrix.qbt_gui }}
+        name: qBittorrent-CI_${{ matrix.os }}-x64_${{ matrix.qbt_gui }}-libtorrent_${{ matrix.libtorrent_version }}
         path: |
           build/compile_commands.json
           build/install_manifest.txt
