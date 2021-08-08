@@ -7,10 +7,10 @@ name: GitHub Actions CI
 on: [pull_request, push]
 
 env:
-  VCPKG_COMMIT: e4ce66eecfd3e5cca5eac06c971921bf8e37cf88
+  VCPKG_COMMIT: 57bd7102d9fd880daa1b0958692294c4a125f6d8
   VCPKG_DEST_MACOS: /Users/runner/qbt_tools/vcpkg
   VCPKG_DEST_WIN: C:\qbt_tools\vcpkg
-  LIBTORRENT_VERSION_TAG: v1.2.12
+  LIBTORRENT_VERSION_TAG: v1.2.14
 
 jobs:
 
