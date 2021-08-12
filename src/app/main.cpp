@@ -35,7 +35,7 @@
 
 #ifdef Q_OS_WIN
 #include <QStyleFactory>
-#include <QStyleFactory.h>
+#include <QSettings>
 #endif
 
 #ifdef Q_OS_WIN
