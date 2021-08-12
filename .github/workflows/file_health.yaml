@@ -15,6 +15,7 @@ jobs:
     - name: install zsh
       run: |
         sudo apt update
+        sudo apt list --upgradable
         sudo apt install zsh
 
     - name: run check file health script
