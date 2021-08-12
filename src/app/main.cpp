@@ -33,8 +33,9 @@
 #include <cstdlib>
 #include <memory>
 
+#ifdef Q_OS_WIN
 #include <QStyleFactory>
-
+#endif
 #ifdef Q_OS_WIN
     QSettings settings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",QSettings::NativeFormat);
     if(settings.value("AppsUseLightTheme")==0){
