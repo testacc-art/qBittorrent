@@ -36,6 +36,9 @@
 #ifdef Q_OS_WIN
 #include <QStyleFactory>
 #include <QSettings>
+#include <QApplication>
+#include <QPalette>
+#include <QColor>
 #endif
 
 void setWindowsDarkTheme()
@@ -45,7 +48,7 @@ void setWindowsDarkTheme()
                        QSettings::NativeFormat);
     if (settings.value("AppsUseLightTheme") == 0)
     {
-        qApp->setStyle(QStyleFactory::create("Fusion"));
+        qApplication->setStyle(QStyleFactory::create("Fusion"));
         QPalette darkPalette;
         QColor darkColor = QColor(45, 45, 45);
         QColor disabledColor = QColor(127, 127, 127);
@@ -67,9 +70,9 @@ void setWindowsDarkTheme()
         darkPalette.setColor(QPalette::HighlightedText, Qt::black);
         darkPalette.setColor(QPalette::Disabled, QPalette::HighlightedText, disabledColor);
 
-        qApp->setPalette(darkPalette);
+        qApplication->setPalette(darkPalette);
 
-        qApp->setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }");
+        qApplication->setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }");
     }
 #endif
 }
