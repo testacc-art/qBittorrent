@@ -38,16 +38,20 @@
 #include <QSettings>
 #endif
 
+void setWindowsDarkTheme()
+{
 #ifdef Q_OS_WIN
-    QSettings settings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",QSettings::NativeFormat);
-    if (settings.value("AppsUseLightTheme")==0);
-        {qApp->setStyle(QStyleFactory::create("Fusion"));
+    QSettings settings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+                       QSettings::NativeFormat);
+    if (settings.value("AppsUseLightTheme") == 0)
+    {
+        qApp->setStyle(QStyleFactory::create("Fusion"));
         QPalette darkPalette;
-        QColor darkColor = QColor(45,45,45);
-        QColor disabledColor = QColor(127,127,127);
+        QColor darkColor = QColor(45, 45, 45);
+        QColor disabledColor = QColor(127, 127, 127);
         darkPalette.setColor(QPalette::Window, darkColor);
         darkPalette.setColor(QPalette::WindowText, Qt::white);
-        darkPalette.setColor(QPalette::Base, QColor(18,18,18));
+        darkPalette.setColor(QPalette::Base, QColor(18, 18, 18));
         darkPalette.setColor(QPalette::AlternateBase, darkColor);
         darkPalette.setColor(QPalette::ToolTipBase, Qt::white);
         darkPalette.setColor(QPalette::ToolTipText, Qt::white);
@@ -65,8 +69,14 @@
 
         qApp->setPalette(darkPalette);
 
-        qApp->setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")};
+        qApp->setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }");
+    }
 #endif
+}
+
+int main(int argc, char *argv[])
+{
+    setWindowsDarkTheme();
 
 #if defined(Q_OS_UNIX)
 #include <sys/resource.h>
