@@ -21,7 +21,7 @@ body:
         - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and **searched** the issue tracker for similar bug reports (including closed ones) **to avoid posting a duplicate**
           required: true
         - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
-          required: true          
+          required: true
         - label: I have **pasted/attached the settings file and relevant log(s)** in the **Attachments** section at the bottom of the report. Mandatory: the settings file and at least the most recent log. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
           required: true
     
