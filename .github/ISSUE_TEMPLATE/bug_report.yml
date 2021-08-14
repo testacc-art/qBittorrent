@@ -22,7 +22,6 @@ body:
           required: true
         - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
           required: true
-
 - type: input
     attributes:
       label: Operating System and version
@@ -35,26 +34,26 @@ body:
     validations:
       required: true
 
-  - type: input
+- type: input
     attributes:
       label: qBittorrent version
     validations:
       required: true
 
-  - type: input
+- type: input
     attributes:
       label: If WebUI related (Browser name and version)
     validations:
       required: true
 
-  - type: textarea
+- type: textarea
     attributes:
       label: Description
       description: Please give a clear and concise description of the bug/issue
     validations:
       required: true
 
-  - type: textarea
+- type: textarea
     attributes:
       label: Steps to Reproduce
       description: Please walk us thorugh it with  a clear and concise description
@@ -65,14 +64,14 @@ body:
     validations:
       required: true
 
-  - type: textarea
+- type: textarea
     attributes:
       label: Expected behavior
       description: Please give a clear and concise description of what you expected to happen
     validations:
       required: true
 
-  - type: textarea
+- type: textarea
     attributes:
       label: Actual behavior
       description: Please give a clear and concise description of what actually happened
