@@ -5,6 +5,7 @@ body:
     attributes:
       value: |
         **Speculated performance issues will be marked as invalid and closed if they do not come with actual profiling data + analysis supporting the claim.**
+
   - type: checkboxes
     attributes:
       label: Prerequisites
