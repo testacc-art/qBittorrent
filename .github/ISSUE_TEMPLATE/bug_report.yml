@@ -22,16 +22,28 @@ body:
           required: true
         - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
           required: true
-          
-  - type: input
+
+- type: input
     attributes:
       label: Operating System and version
+    validations:
+      required: true
+
+- type: input
+    attributes:
+      label: (If Linux) Please give Qt & libtorrent version
     validations:
       required: true
 
   - type: input
     attributes:
       label: qBittorrent version
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: If WebUI related (Browser name and version)
     validations:
       required: true
 
@@ -66,9 +78,3 @@ body:
       description: Please give a clear and concise description of what actually happened
     validations:
       required: true  
-
-  - type: input
-    attributes:
-      label: If WebUI related (Browser name and version)
-    validations:
-      required: true
