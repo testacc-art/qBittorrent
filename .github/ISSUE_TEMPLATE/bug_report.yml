@@ -20,7 +20,13 @@ body:
 
   - type: input
     attributes:
-      label: Operating System and qBittorrent version
+      label: Operating System
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: qBittorrent version
     validations:
       required: true
 
@@ -30,10 +36,16 @@ body:
     validations:
       required: true
 
+  - type: input
+    attributes:
+      label: If WebUI related (Browser name and version)
+    validations:
+      required: true
+
   - type: textarea
     attributes:
       label: What issue are you experiencing?
-      description: Please give a clear and concise description of the bug/issue.
+      description: Please add "Crash Report" or give a clear and concise description of the bug/issue.
     validations:
       required: true
 
@@ -59,11 +71,5 @@ body:
     attributes:
       label: Extra Info
       description: Please give more details, include logs, screenshots etc.
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: If WebUI related (Browser name and version)
     validations:
       required: true
