@@ -17,7 +17,7 @@ body:
           required: true
         - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
           required: true
-        - label: I have **pasted/attached the settings file and relevant log(s)** in the **Logs & Settings/Config files** section at the bottom of the report. 
+        - label: I have **pasted/attached the settings file and relevant log(s)** in the **Logs & Settings/Config files** section at the bottom of the report.
           required: true
 
   - type: input
