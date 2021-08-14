@@ -5,7 +5,6 @@ body:
     attributes:
       value: |
         **Speculated performance issues will be marked as invalid and closed if they do not come with actual profiling data + analysis supporting the claim.**
-        
   - type: checkboxes
     attributes:
       label: Prerequisites
@@ -31,7 +30,8 @@ body:
 
 - type: input
     attributes:
-      label: "If" Linux, Please give Qt & libtorrent version
+      description: If running on Linux
+       label: Qt & libtorrent version
     validations:
       required: true
 
