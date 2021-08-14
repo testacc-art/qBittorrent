@@ -17,6 +17,8 @@ body:
           required: true
         - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
           required: true
+        - label: I have **pasted/attached the settings file and relevant log(s)** in the **Logs & Settings/Config files** section at the bottom of the report. 
+          required: true
 
   - type: input
     attributes:
@@ -26,7 +28,7 @@ body:
 
   - type: input
     attributes:
-      label: Qt & libtorrent-rasterbar verions (Linux OS Only)
+      label: Qt & libtorrent-rasterbar versions (Linux OS Only)
     validations:
       required: true
 
@@ -70,7 +72,14 @@ body:
 
   - type: textarea
     attributes:
-      label: Extra Info
-      description: Please give more details, include logs, screenshots etc.
+      label: Extra Info/Attachments
+      description: Please give more details, add screenshots etc.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Logs & Settings/Config files
+      description: Please add the settings file and at least the most recent log. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
     validations:
       required: true
