@@ -26,13 +26,15 @@ body:
 
   - type: input
     attributes:
-      label: If on Linux, libtorrent-rasterbar and Qt versions
+      label: Qt & libtorrent-rasterbar verions
+      description: (Linux OS Only)
     validations:
       required: true
 
   - type: input
     attributes:
       label: qBittorrent version
+      description: Please note, that we **DO NOT** support any `portableapps`/`Enhanced Editions` etc.
     validations:
       required: true
 
