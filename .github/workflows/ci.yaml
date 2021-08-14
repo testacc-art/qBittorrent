@@ -17,7 +17,7 @@ jobs:
   ci_windows:
     name: Windows + vcpkg
 
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     defaults:
       run:
