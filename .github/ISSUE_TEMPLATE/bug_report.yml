@@ -37,7 +37,7 @@ body:
 
   - type: input
     attributes:
-      label: If WebUI related (Browser name and version)
+      label: If WebUI related - Browser name and version
     validations:
       required: true
 
@@ -51,7 +51,7 @@ body:
   - type: textarea
     attributes:
       label: Steps to Reproduce
-      description: Please walk us thorugh it with  a clear and concise description.
+      description: Please walk us thorugh it with a clear and concise description.
       placeholder: |
         1. [First Step]
         2. [Second Step]
