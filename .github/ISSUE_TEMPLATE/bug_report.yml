@@ -4,26 +4,25 @@ body:
   - type: markdown
     attributes:
       value: |
-        Speculated performance issues will be marked as invalid and closed if they do not come with actual profiling data + analysis supporting the claim.
-        Opening issues for adding new filter lists is now disallowed and such issues will be declined and closed.
+        **Speculated performance issues will be marked as invalid and closed if they do not come with actual profiling data + analysis supporting the claim.**
+        
   - type: checkboxes
     attributes:
       label: Prerequisites
       description: |
         To rule out invalid issues, confirm and check each one of the checkboxes.
-        If [disabling uBO](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-large-power-button) makes the issue go away, then in all likelihood this is a filter issue.
-        See [what the logger reports](https://github.com/gorhill/uBlock/wiki/The-logger) reports when you reproduce the issue, this will help you determine whether this is a filter issue.
-        If the issue is still present after wholly disabling uBO in the browser, then the issue is unrelated to uBO.
       options:
-        - label: I verified that this is not a filter issue (MUST be reported at [filter issue tracker](https://github.com/uBlockOrigin/uAssets/issues))
+        - label: I have read the **issue reporting section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good bug report with the required information
           required: true
-        - label: This is not a [support issue or a question](https://old.reddit.com/r/uBlockOrigin/)
+        - label: I have verified that the **issue is not fixed and is reproducible** in the **[latest version](https://www.qbittorrent.org/download.php)**
           required: true
-        - label: I performed a [cursory search of the issue tracker](https://github.com/uBlockOrigin/uBlock-issues/issues) to avoid opening a duplicate issue
+        - label: (optional but recommended) I have verified that the **issue is not fixed and is reproducible** in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush)**
+          required: false
+        - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and **searched** the issue tracker for similar bug reports (including closed ones) **to avoid posting a duplicate**
           required: true
-        - label: The issue is not present after wholly disabling uBlock Origin ("uBO") in the browser
-          required: true
-        - label: I checked the [documentation](https://github.com/gorhill/uBlock/wiki) to understand that the issue I report is not a normal behavior
+        - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
+          required: true          
+        - label: I have **pasted/attached the settings file and relevant log(s)** in the **Attachments** section at the bottom of the report. Mandatory: the settings file and at least the most recent log. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
           required: true
     
   - type: checkboxes
@@ -77,13 +76,13 @@ body:
 
   - type: input
     attributes:
-      label: uBlock Origin version
+      label: qBittorrent version
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Browser name and version
+      label: If WebUI related (Browser name and version)
     validations:
       required: true
 
