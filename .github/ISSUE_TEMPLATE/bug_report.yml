@@ -9,7 +9,7 @@ body:
     attributes:
       label: Prerequisites
       description: |
-        To rule out invalid issues, confirm and check each one of the checkboxes.
+        To rule out invalid issues, confirm and check each of the required checkboxes.
       options:
         - label: I have read the **issue reporting section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good bug report with the required information
           required: true
@@ -50,14 +50,14 @@ body:
 - type: textarea
     attributes:
       label: Description
-      description: Please give a clear and concise description of the bug/issue
+      description: Please give a clear and concise description of the issue.
     validations:
       required: true
 
 - type: textarea
     attributes:
       label: Steps to Reproduce
-      description: Please walk us thorugh it with  a clear and concise description
+      description: Please walk us through it, clearly and concisely.
       placeholder: |
         1. [First Step]
         2. [Second Step]
@@ -68,13 +68,13 @@ body:
 - type: textarea
     attributes:
       label: Expected behavior
-      description: Please give a clear and concise description of what you expected to happen
+      description: Please give a clear and concise description of what you expected to happen.
     validations:
       required: true
 
 - type: textarea
     attributes:
       label: Actual behavior
-      description: Please give a clear and concise description of what actually happened
+      description: Please give a clear and concise description of what actually happened.
     validations:
       required: true
