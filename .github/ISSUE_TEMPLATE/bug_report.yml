@@ -26,8 +26,7 @@ body:
 
   - type: input
     attributes:
-      label: Qt & libtorrent-rasterbar verions
-      description: (Linux OS Only)
+      label: Qt & libtorrent-rasterbar verions (Linux OS Only)
     validations:
       required: true
 
