@@ -26,13 +26,13 @@ body:
 
   - type: input
     attributes:
-      label: qBittorrent version
+      label: If on Linux, libtorrent-rasterbar and Qt versions
     validations:
       required: true
 
   - type: input
     attributes:
-      label: If on Linux, libtorrent-rasterbar and Qt versions
+      label: qBittorrent version
     validations:
       required: true
 
