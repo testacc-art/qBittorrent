@@ -34,7 +34,7 @@ body:
   - type: input
     attributes:
       label: qBittorrent version
-      description: Please note, that we **DO NOT** support any `portableapps`/`Enhanced Editions` etc.
+      description: We **DO NOT** officially support any `portableapps`/`Enhanced Editions` or End-Of-Life versions `4.1.x` etc.
     validations:
       required: true
 
