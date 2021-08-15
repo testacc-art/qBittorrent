@@ -85,7 +85,6 @@ body:
     attributes:
       label: Additional context
       description: Please give more details, add screenshots etc.
-
       Anything that will give us more context about the issue you are encountering!
     validations:
       required: true
