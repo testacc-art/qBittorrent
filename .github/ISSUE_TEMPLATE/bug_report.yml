@@ -7,6 +7,8 @@ body:
              #### ADVISORY
              We **DO NOT** support any **End-Of-Life** versions `<=4.1.x` or **3rd party/forked versions** e.g. `portableapps`/`Enhanced Edition`etc.
              It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
+             #### Note
+             Thanks for taking the time to fill out this report!
   - type: checkboxes
     attributes:
       label: Prerequisites
@@ -57,7 +59,7 @@ body:
   - type: textarea
     attributes:
       label: What issue are you experiencing?
-      description: Please add "Crash Report" or give a clear and concise description of the bug/issue.
+      description: Please add "Crash Report" (if encountered) or give a clear and concise description of the bug/issue.
     validations:
       required: true
 
@@ -81,14 +83,16 @@ body:
 
   - type: textarea
     attributes:
-      label: Extra Info/Attachments
-      description: Please give more details, add screenshots etc.
+      label: Additional context
+      description: |
+      Please give more details, add screenshots etc.
+      Anything that will give us more context about the issue you are encountering!
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Logs & Settings/Config files
+      label: Logs & Settings/Configuration file(s).
       description: Please add the settings file and at least the most recent log. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
     validations:
       required: true
