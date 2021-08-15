@@ -4,10 +4,10 @@ body:
   - type: markdown
     attributes:
      value: |
-             #### ADVISORY
+             ## ADVISORY
              We **DO NOT** support any **End-Of-Life** versions `<=4.1.x` or **3rd party/forked versions** e.g. `portableapps`/`Enhanced Edition`etc.
              It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
-             #### Note
+             ### From the qBittorrent Team
              Thanks for taking the time to fill out this report!
   - type: checkboxes
     attributes:
