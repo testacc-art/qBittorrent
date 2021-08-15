@@ -4,9 +4,9 @@ body:
   - type: markdown
     attributes:
      value: |
-     #### ADVISORY
-     We **DO NOT** officially support any End-Of-Life versions `<=4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
-     It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
+             #### ADVISORY
+             We **DO NOT** officially support any End-Of-Life versions `<=4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+             It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
   - type: checkboxes
     attributes:
       label: Prerequisites
