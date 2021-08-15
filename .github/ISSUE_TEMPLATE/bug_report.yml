@@ -19,6 +19,12 @@ body:
           required: true
         - label: I have **pasted/attached the settings file and relevant log(s)** in the **Logs & Settings/Config files** section at the bottom of the report.
           required: true
+          label: Note:
+        - type: markdown
+          attributes:
+          value: |
+                  We **DO NOT** officially support any End-Of-Life versions `<=4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+          
 
   - type: input
     attributes:
@@ -38,10 +44,6 @@ body:
     attributes:
       label: qBittorrent version
       description: Please specify if you are using 32-Bit or 64-Bit.
-  - type: markdown
-    attributes:
-      value: |
-        We **DO NOT** officially support any End-Of-Life versions `4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
     validations:
       required: true
 
