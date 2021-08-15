@@ -37,7 +37,7 @@ body:
     attributes:
       label: qBittorrent version
       description: Please specify if you are using 32-Bit or 64-Bit
-      description: We **DO NOT** officially support any End-Of-Life versions `4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+                   We **DO NOT** officially support any End-Of-Life versions `4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
     validations:
       required: true
 
