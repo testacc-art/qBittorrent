@@ -1,12 +1,12 @@
 name: Bug Report
-description: File a bug report for qBittorrent
+description: File a issue/crash/bug report for qBittorrent.
 body:
   - type: markdown
     attributes:
      value: |
-             #### ADVISORY
-             We **DO NOT** officially support any End-Of-Life versions `<=4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
-             It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
+     ### ADVISORY
+     We **DO NOT** officially support any End-Of-Life versions `<=4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+     It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
   - type: checkboxes
     attributes:
       label: Prerequisites
@@ -28,8 +28,8 @@ body:
 
   - type: input
     attributes:
-      label: Operating System version
-      description: Please specify if you are using 32-Bit or 64-Bit
+      label: Operating System & Build/Version
+      description: Please specify if you are using 32-Bit or 64-Bit.
     validations:
       required: true
 
