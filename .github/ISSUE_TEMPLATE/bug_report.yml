@@ -1,11 +1,17 @@
 name: Bug Report
 description: File a bug report
 body:
+  - type: markdown
+    attributes:
+      label: Note
+      value: |
+              We **DO NOT** officially support any End-Of-Life versions `<=4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+              It is **your** responsibility to **redact** any sensitive information in logs/config files.
   - type: checkboxes
     attributes:
       label: Prerequisites
       description: |
-        To rule out invalid issues, confirm and check each one of the checkboxes.
+        To rule out invalid issues, confirm and check each one of the required checkboxes.
       options:
         - label: I have read the **issue reporting section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good bug report with the required information
           required: true
@@ -19,12 +25,6 @@ body:
           required: true
         - label: I have **pasted/attached the settings file and relevant log(s)** in the **Logs & Settings/Config files** section at the bottom of the report.
           required: true
-          
-        - type: markdown
-          attributes:
-          label: Note:
-          value: |
-                  We **DO NOT** officially support any End-Of-Life versions `<=4.1.x` or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
 
   - type: input
     attributes:
