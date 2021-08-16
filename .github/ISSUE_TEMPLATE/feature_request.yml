@@ -2,7 +2,7 @@ name: Feature Request
 description: Suggest a new feature or enhancement for qBittorrent.
 labels: 'Feature request'
 body:
-  - type: checkboxes
+- type: checkboxes
     attributes:
       label: Prerequisites
       description: |
