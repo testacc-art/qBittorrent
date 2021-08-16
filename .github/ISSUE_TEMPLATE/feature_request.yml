@@ -3,8 +3,8 @@
  labels: 'Feature request'
  body:
    - type: markdown
-    attributes:
-     value: |
+     attributes:
+      value: |
      A good report shouldn't leave others needing to chase you up for more information.
   - type: checkboxes
   attributes:
