@@ -16,7 +16,7 @@ body:
           required: false
         - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)**
           required: true
-        - label: I have **searched** the [feature](https://github.com/qbittorrent/qBittorrent/issues?q=is%3Aopen+is%3Aissue+label%3AFeature) and ["Feature request"](https://github.com/qbittorrent/qBittorrent/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+request%22) sections on the issue tracker for similar feature requests (including closed ones) **to avoid posting a duplicate.**
+        - label: I have **searched the [Feature](https://github.com/qbittorrent/qBittorrent/issues?q=is%3Aopen+is%3Aissue+label%3AFeature) and [Feature request](https://github.com/qbittorrent/qBittorrent/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+request%22) sections** of the issue tracker for similar feature requests (including closed ones) **to avoid posting a duplicate.**
           required: true
         - label: This request is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
           required: true
