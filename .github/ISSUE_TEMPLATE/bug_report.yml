@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report for qBittorrent.
+description: File a bug report to help improve qBittorrent user experience.
 body:
   - type: markdown
     attributes:
@@ -28,28 +28,28 @@ body:
 
   - type: input
     attributes:
-      label: Operating System & build/version
+      label: Operating System & build/version.
       description: Please specify if you are using 32-Bit or 64-Bit.
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Qt & libtorrent-rasterbar versions
+      label: Qt & libtorrent-rasterbar versions.
       description: (Linux OS Only)
     validations:
       required: true
 
   - type: input
     attributes:
-      label: qBittorrent version
+      label: qBittorrent version.
       description: Please specify if you are using 32-Bit or 64-Bit.
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Browser name and version
+      label: Browser name and version.
       description: (If WebUI related Only)
     validations:
       required: true
@@ -63,7 +63,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Steps to Reproduce
+      label: Steps to Reproduce.
       description: Please walk us through it with a clear and concise description.
       placeholder: |
         1. [First Step]
@@ -81,14 +81,14 @@ body:
 
   - type: textarea
     attributes:
-      label: Additional context
+      label: Additional context.
       description: Add screenshots etc. (Anything that will give us more context about the issue you are encountering!)
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Logs & Settings/Configuration file(s).
+      label: Log & Settings file(s).
       description: Please add the settings file and at least the most recent log. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
     validations:
       required: true
