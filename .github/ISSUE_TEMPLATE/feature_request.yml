@@ -1,0 +1,48 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for qBittorrent.
+labels: ["Feature Request"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To rule out invalid requests, confirm and check each one of the required checkboxes.
+      options:
+        - label: I have read the **feature request section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good feature request with the required information.
+          required: true
+        - label: I have verified that the **feature** I am requesting is **not available** in the **[latest version](https://www.qbittorrent.org/download.php).**
+          required: true
+        - label: (optional but recommended) I have verified that the **feature** I am requesting is **not available** in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
+          required: false
+        - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2).**
+          required: true
+        - label: I have **searched the [Feature request](https://github.com/qbittorrent/qBittorrent/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+request%22) section** of the issue tracker for similar feature requests (including closed ones) **to avoid posting a duplicate.**
+          required: true
+        - label: This request is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
+          required: true
+
+  - type: textarea
+    attributes:
+      label: What is your Suggestion/Feature Request?
+      description: Please give a clear and a concise description.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What is the "Use case"?
+      description: Please give clear reasoning and concise description.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context.
+      description: Add screenshots etc. (Anything that will give us more context about what is being requested!)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+             ### Thanks for taking the time to fill out this report! (qBittorrent Bug Handler Team)
