@@ -14,7 +14,7 @@ body:
           required: true
         - label: (optional but recommended) I have verified that the **feature** I am requesting is **not available** in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
           required: false
-        - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)**
+        - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2).**
           required: true
         - label: I have **searched the [Feature](https://github.com/qbittorrent/qBittorrent/issues?q=is%3Aopen+is%3Aissue+label%3AFeature) and [Feature request](https://github.com/qbittorrent/qBittorrent/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+request%22) sections** of the issue tracker for similar feature requests (including closed ones) **to avoid posting a duplicate.**
           required: true
@@ -38,7 +38,7 @@ body:
   - type: textarea
     attributes:
       label: Additional context.
-      description: Add screenshots etc. (Anything that will give us more context about the issue you are encountering!)
+      description: Add screenshots etc. (Anything that will give us more context about what is being requested!)
     validations:
       required: true
 
