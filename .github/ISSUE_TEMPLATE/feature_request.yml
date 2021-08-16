@@ -23,14 +23,14 @@ body:
     attributes:
       label: What issue are you experiencing?
       description: Please add "Crash Report" (if encountered) or give a clear and concise description of the bug/issue.
-    validations:
+      validations:
       required: true
 
   - type: textarea
     attributes:
       label: What is your Suggestion/Feature Request?
       description: Please give clear reasoning and a concise description.
-    validations:
+      validations:
       required: true
 
   - type: textarea
