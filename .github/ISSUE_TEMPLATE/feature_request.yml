@@ -2,6 +2,10 @@
  description: Suggest a new feature or enhancement for qBittorrent.
  body:
  labels: 'Feature request'
+   - type: markdown
+    attributes:
+     value: |
+     A good report shouldn't leave others needing to chase you up for more information.
   - type: checkboxes
   attributes:
     label: Prerequisites
