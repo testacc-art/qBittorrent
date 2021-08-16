@@ -1,13 +1,12 @@
 name: Bug Report
 description: File a bug report to help improve qBittorrent user experience.
-
-             We **DO NOT** support any **End-Of-Life** versions `<=4.1.x` or **3rd party/forked versions** e.g. `portableapps`/`Enhanced Edition`etc.
 body:
   - type: markdown
     attributes:
      value: |
              ### ADVISORY
-                 It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
+             We **DO NOT** support any **End-Of-Life** versions `<=4.1.x` or **3rd party/forked versions** e.g. `portableapps`/`Enhanced Edition`etc.
+             It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
   - type: checkboxes
     attributes:
       label: Prerequisites
