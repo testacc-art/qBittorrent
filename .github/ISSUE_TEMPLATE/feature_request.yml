@@ -1,6 +1,6 @@
 name: Feature Request
 description: Suggest a new feature or enhancement for qBittorrent.
-labels: 'Feature request'
+labels: ["Feature request"]
 body:
 - type: markdown
   attributes:
