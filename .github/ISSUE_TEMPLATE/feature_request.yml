@@ -1,12 +1,12 @@
- name: Feature Request
- description: Suggest a new feature or enhancement for qBittorrent.
- labels: 'Feature request'
- body:
-   - type: markdown
-     attributes:
-      value: |
-              #### Note
-              A good report shouldn't leave others needing to chase you up for more information.
+name: Feature Request
+description: Suggest a new feature or enhancement for qBittorrent.
+labels: 'Feature request'
+body:
+  - type: markdown
+    attributes:
+     value: |
+             #### Note
+             A good report shouldn't leave others needing to chase you up for more information.
   - type: checkboxes
   attributes:
     label: Prerequisites
