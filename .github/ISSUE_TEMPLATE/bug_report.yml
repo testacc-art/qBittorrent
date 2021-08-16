@@ -15,7 +15,7 @@ body:
       options:
         - label: I have read the **issue reporting section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good bug report with the required information.
           required: true
-        - label: I have verified that the **issue is not fixed and is reproducible** in the **[latest version](https://www.qbittorrent.org/download.php)**
+        - label: I have verified that the **issue is not fixed and is reproducible** in the **[latest version](https://www.qbittorrent.org/download.php).**
           required: true
         - label: (optional but recommended) I have verified that the **issue is not fixed and is reproducible** in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
           required: false
