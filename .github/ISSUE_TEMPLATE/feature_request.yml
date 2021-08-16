@@ -7,7 +7,8 @@ body:
     value: |
              #### Note
              A good report shouldn't leave others needing to chase you up for more information.
- - type: checkboxes
+
+- type: checkboxes
    attributes:
      label: Prerequisites
      description: |
