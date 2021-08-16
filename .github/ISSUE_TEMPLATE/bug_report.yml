@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a issue/crash/bug report for qBittorrent.
+description: File a bug report for qBittorrent.
 body:
   - type: markdown
     attributes:
