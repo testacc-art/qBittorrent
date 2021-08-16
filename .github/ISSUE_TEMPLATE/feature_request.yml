@@ -1,5 +1,6 @@
 name: Feature Request
 description: Suggest a new feature or enhancement for qBittorrent.
+labels: ["Feature Request"]
 body:
   - type: checkboxes
     attributes:
@@ -32,21 +33,21 @@ body:
     validations:
       required: true
 
-- type: textarea
-  attributes:
-    label: What is the "Use case"?
-    description: Please give clear and concise description.
-    validations:
-    required: true
+  - type: textarea
+    attributes:
+      label: What is the "Use case"?
+      description: Please give clear and concise description.
+      validations:
+      required: true
 
   - type: textarea
     attributes:
       label: Additional context.
       description: Add screenshots etc. (Anything that will give us more context about the issue you are encountering!)
-    validations:
+      validations:
       required: true
 
-- type: markdown
+  - type: markdown
     attributes:
-     value: |
+      value: |
              ### Thanks for taking the time to fill out this report! (qBittorrent Bug Handler Team)
