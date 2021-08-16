@@ -11,7 +11,7 @@ body:
   attributes:
     label: Prerequisites
     description: |
-      To rule out invalid requests, confirm and check each one of the required checkboxes.    
+      To rule out invalid requests, confirm and check each one of the required checkboxes.
     options:
     - label: I have read the **feature request section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good feature request with the required information
     required: true
