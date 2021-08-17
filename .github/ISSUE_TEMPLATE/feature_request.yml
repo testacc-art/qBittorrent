@@ -26,14 +26,14 @@ body:
       label: Suggestion
       description: Please give a clear and a concise description.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
       label: Use case
       description: Please give clear reasoning and concise description.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
