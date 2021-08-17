@@ -28,7 +28,7 @@ body:
 
   - type: textarea
     attributes:
-      label:qBittorrent info & Operating System & build/version
+      label: qBittorrent info & Operating System & build/version
       description: Please specify if you are using 32-Bit or 64-Bit.
       placeholder: |
         OS: Windows 10 Pro 21H1/2009 x64
