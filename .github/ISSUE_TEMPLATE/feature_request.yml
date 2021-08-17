@@ -1,6 +1,6 @@
 name: Feature Request
 description: Suggest a new feature or enhancement for qBittorrent.
-labels: ["Feature Request"]
+labels: ["Feature request"]
 body:
   - type: checkboxes
     attributes:
@@ -23,26 +23,21 @@ body:
 
   - type: textarea
     attributes:
-      label: What is your Suggestion/Feature Request?
+      label: Suggestion
       description: Please give a clear and a concise description.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: What is the "Use case"?
+      label: Use case
       description: Please give clear reasoning and concise description.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Additional context.
+      label: Extra info/examples/attachments
       description: Add screenshots etc. (Anything that will give us more context about what is being requested!)
     validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-             ### Thanks for taking the time to fill out this report! (qBittorrent Bug Handler Team)
+      required: false
