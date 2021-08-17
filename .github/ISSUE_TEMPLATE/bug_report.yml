@@ -23,7 +23,7 @@ body:
         required: true
       - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
         required: true
-      - label: I have taken note of the **(ADVISORY)** & if releavant to issue or if asked by a **team member** will add the settings file and log(s) in the **Logs & settings file(s)** section at the bottom of the report. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
+      - label: I have taken note of the **(ADVISORY)** & if relevant to issue or if asked by a **team member** will add the settings file and log(s) in the **Logs & settings file(s)** section at the bottom of the report. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
         required: false
 
   - type: textarea
