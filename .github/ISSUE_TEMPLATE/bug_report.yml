@@ -28,7 +28,7 @@ body:
 
   - type: textarea
     attributes:
-      label: qBittorrent / Qt / libtorrent-rasterbar versions & Operating System
+      label: Operating System & qBittorrent / Qt / libtorrent-rasterbar versions
       description: Please specify if you are using 32-Bit or 64-Bit.
       placeholder: |
         qBittorrent: 4.3.7 x64
