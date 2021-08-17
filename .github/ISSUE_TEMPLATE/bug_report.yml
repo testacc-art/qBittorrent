@@ -4,80 +4,76 @@ body:
   - type: markdown
     attributes:
      value: |
-             #### ADVISORY
-             We **DO NOT** support any **End-Of-Life** versions `<=4.1.x` or **3rd party/forked versions** e.g. `portableapps`/`Enhanced Edition`etc.
-             It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
+      #### ADVISORY
+       "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+       It is **YOUR** responsibility to **redact any sensitive information** in **logs/config files**.
   - type: checkboxes
     attributes:
       label: Prerequisites
       description: |
-        To rule out invalid issues, confirm and check each one of the required checkboxes.
+       To rule out invalid issues, confirm and check each one of the required checkboxes.
       options:
-        - label: I have read the **issue reporting section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good bug report with the required information.
-          required: true
-        - label: I have verified that the **issue is not fixed and is reproducible** in the **[latest version](https://www.qbittorrent.org/download.php).**
-          required: true
-        - label: (optional but recommended) I have verified that the **issue is not fixed and is reproducible** in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
-          required: false
-        - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and **searched** the issue tracker for similar bug reports (including closed ones) **to avoid posting a duplicate.**
-          required: true
-        - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
-          required: true
-        - label: I have taken note of the **(ADVISORY)** above & **added the settings file and relevant log(s)** in the **Logs & Settings/Config files** section at the bottom of the report.
-          required: true
+      - label: I have read the **issue reporting section** in the [contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md), so I know how to submit a good bug report with the required information.
+        required: true
+      - label: I have verified that the **issue is not fixed and is reproducible** in the **[latest version](https://www.qbittorrent.org/download.php).**
+        required: true
+      - label: (optional but recommended) I have verified that the **issue is not fixed and is reproducible** in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
+        required: false
+      - label: I have **checked the [frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and **searched** the issue tracker for similar bug reports (including closed ones) **to avoid posting a duplicate.**
+        required: true
+      - label: This report is **not a support request or question**, both of which are better suited for either the [discussions section](https://github.com/qbittorrent/qBittorrent/discussions), [forum](https://qbforums.shiki.hu/), or [subreddit](https://www.reddit.com/r/qBittorrent/). The [wiki](https://github.com/qbittorrent/qBittorrent/wiki) did not contain a suitable solution either.
+        required: true
+      - label: I have taken note of the **(ADVISORY)** & will add if/when asked by a **Team member** the settings file and relevant log(s) in the **Logs & settings file(s)** section at the bottom of the report. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
+        required: false
 
   - type: textarea
     attributes:
-      label: qBittorrent info & Operating System & build/version
+      label: qBittorrent / Qt / libtorrent-rasterbar versions & Operating System
       description: Please specify if you are using 32-Bit or 64-Bit.
       placeholder: |
-        OS: Windows 10 Pro 21H1/2009 x64
+        Example
         qBittorrent: 4.3.7 x64
         Qt: 5.15.2
         libtorrent-rasterbar: 1.2.14
+        OS: Windows 10 Pro 21H1/2009 x64
+      validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What is the problem being experienced?
+      description: Please add "crash report" (if encountered) or give a clear and concise description of the bug/issue.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: What issue are you experiencing?
-      description: Please add "Crash Report" (if encountered) or give a clear and concise description of the bug/issue.
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
-      label: Steps to Reproduce.
+      label: Steps to reproduce.
       description: Please walk us through it with a clear and concise description.
       placeholder: |
-        1. [First Step]
-        2. [Second Step]
-        3. [and so on...]
-    validations:
-      required: true
+        1. First step
+        2. Second step
+        3. and so on...
+      validations:
+      required: false
 
   - type: textarea
     attributes:
       label: What is the expected behavior?
       description: Please give a clear and concise description of what you expected to happen.
-    validations:
+      validations:
       required: true
 
   - type: textarea
     attributes:
       label: Additional context.
       description: Add screenshots etc. (Anything that will give us more context about the issue you are encountering!)
-    validations:
-      required: true
+      validations:
+      required: false
 
   - type: textarea
     attributes:
-      label: Log & Settings file(s).
+      label: Log & settings file(s).
       description: Please add the settings file and at least the most recent log. See [this wiki page](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-     value: |
-             ### Thanks for taking the time to fill out this report! (qBittorrent Bug Handler Team)
+      validations:
+      required: false
