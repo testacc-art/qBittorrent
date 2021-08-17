@@ -31,26 +31,11 @@ body:
       label: Operating System & build/version.
       description: Please specify if you are using 32-Bit or 64-Bit.
     validations:
-      required: true
-
-  - type: input
-    attributes:
       label: Qt & libtorrent-rasterbar versions.
       description: (Linux OS Only)
     validations:
-      required: true
-
-  - type: input
-    attributes:
       label: qBittorrent version.
       description: Please specify if you are using 32-Bit or 64-Bit.
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: Browser name and version.
-      description: (If WebUI related Only)
     validations:
       required: true
 
