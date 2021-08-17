@@ -43,7 +43,7 @@ body:
     attributes:
       label: What is the problem being experienced?
       description: Please add "crash report" (if encountered) or give a clear and concise description of the bug/issue.
-    validations:
+      validations:
       required: true
 
   - type: textarea
