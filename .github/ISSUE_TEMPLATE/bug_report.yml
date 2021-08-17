@@ -26,7 +26,7 @@ body:
         - label: I have taken note of the **(ADVISORY)** above & **added the settings file and relevant log(s)** in the **Logs & Settings/Config files** section at the bottom of the report.
           required: true
 
-  - type: input
+  - type: textarea
     attributes:
       label:qBittorrent info & Operating System & build/version
       description: Please specify if you are using 32-Bit or 64-Bit.
