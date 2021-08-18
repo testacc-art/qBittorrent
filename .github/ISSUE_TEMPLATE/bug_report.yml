@@ -13,7 +13,7 @@ body:
       label: Prerequisites
     description: |
       To rule out invalid issues, confirm and check each one of the required checkboxes.
-      options:
+    options:
       - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
       required: true
       - label: I have verified that the issue is not fixed and is reproducible in the **[latest version](https://www.qbittorrent.org/download.php).**
