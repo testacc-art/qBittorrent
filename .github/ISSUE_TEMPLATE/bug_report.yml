@@ -37,14 +37,14 @@ body:
        libtorrent-rasterbar:
       description: |
         Qt and libtorrent-rasterbar versions are required when: 1. You are using linux. 2. You are not using an official build downloaded from our website.
-      validations:
+     validations:
       required: true
 
   - type: textarea
     attributes:
       label: What problem is being experienced?
       description: Please add the "crash report" (if encountered) or provide a clear and concise description of the problem.
-      validations:
+     validations:
       required: true
 
   - type: textarea
@@ -55,19 +55,19 @@ body:
         1. First step
         2. Second step
         3. and so on...
-      validations:
+     validations:
       required: false
 
   - type: textarea
     attributes:
       label: Additional context
       description: Add screenshots etc. (Anything that will give us more context about the problem.)
-      validations:
+     validations:
       required: false
 
   - type: textarea
     attributes:
       label: Log & settings file(s)
       description: Please add the settings file and at least the most recent log. See ["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
-      validations:
+     validations:
       required: false
