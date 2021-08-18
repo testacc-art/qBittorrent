@@ -34,11 +34,6 @@ body:
         Qt and libtorrent-rasterbar versions are required when:
         1. You are using linux.
         2. You are not using an official build downloaded from our website.
-      placeholder: |
-       "qBittorrent:"
-       "Operating system:"
-       "Qt:"
-       "libtorrent-rasterbar:"
      validations:
       required: true
 
