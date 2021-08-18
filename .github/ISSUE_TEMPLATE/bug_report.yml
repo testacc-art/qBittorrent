@@ -11,10 +11,8 @@ body:
         Operating system: Windows 10 Pro 21H1/2009 x64
         Qt: 5.15.2
         libtorrent-rasterbar: 1.2.14
-      placeholder: |
+      value: |
        qBittorrent:
        Operating system:
        Qt:
        libtorrent-rasterbar:
-validations:
- required: true
