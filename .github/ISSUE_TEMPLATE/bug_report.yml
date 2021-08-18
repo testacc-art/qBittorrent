@@ -30,6 +30,11 @@ body:
   - type: textarea
     attributes:
       label: qBittorrent & operating system versions
+      value: |
+      qBittorrent:
+      Operating system:
+      Qt:
+      libtorrent-rasterbar:
       description: |
         Qt and libtorrent-rasterbar versions are required when: 1. You are using linux. 2. You are not using an official build downloaded from our website.
         Example: 
@@ -37,13 +42,8 @@ body:
         Operating system: Windows 10 Pro 21H1/2009 x64
         Qt: 5.15.2
         libtorrent-rasterbar: 1.2.14
-      value: |
-      qBittorrent:
-      Operating system:
-      Qt:
-      libtorrent-rasterbar:
-     validations:
-      required: true
+    validations:
+     required: true
 
   - type: textarea
     attributes:
