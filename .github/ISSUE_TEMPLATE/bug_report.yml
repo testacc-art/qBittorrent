@@ -31,10 +31,10 @@ body:
     attributes:
       label: qBittorrent & operating system versions
       value: |
-       qBittorrent:
-       Operating system:
-       Qt:
-       libtorrent-rasterbar:
+       "qBittorrent:"
+       "Operating system:"
+       "Qt:"
+       "libtorrent-rasterbar:"
       description: |
         Qt and libtorrent-rasterbar versions are required when: 1. You are using linux. 2. You are not using an official build downloaded from our website.
      validations:
