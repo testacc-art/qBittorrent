@@ -32,7 +32,7 @@ body:
     label: qBittorrent & operating system versions
     description: |
       Qt and libtorrent-rasterbar versions are required when: 1. You are using linux. 2. You are not using an official build downloaded from our website.
-    Example: 
+        Example: 
         qBittorrent: 4.3.7 x64
         Operating system: Windows 10 Pro 21H1/2009 x64
         Qt: 5.15.2
