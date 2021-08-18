@@ -11,9 +11,9 @@ body:
   - type: checkboxes
     attributes:
       label: Prerequisites
-    description: |
+      description: |
       To rule out invalid issues, confirm and check each one of the required checkboxes.
-    options:
+      options:
       - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
         required: true
       - label: I have verified that the issue is not fixed and is reproducible in the **[latest version](https://www.qbittorrent.org/download.php).**
@@ -30,6 +30,11 @@ body:
   - type: textarea
     attributes:
       label: qBittorrent & operating system versions
+      value: |
+       qBittorrent:
+       Operating system:
+       Qt:
+       libtorrent-rasterbar:
       description: |
         Qt and libtorrent-rasterbar versions are required when: 1. You are using linux. 2. You are not using an official build downloaded from our website.
         Example: 
@@ -37,20 +42,15 @@ body:
         Operating system: Windows 10 Pro 21H1/2009 x64
         Qt: 5.15.2
         libtorrent-rasterbar: 1.2.14
-      value: |
-       qBittorrent:
-       Operating system:
-       Qt:
-       libtorrent-rasterbar:
-    validations:
-     required: true
+      validations:
+      required: true
 
   - type: textarea
     attributes:
       label: What problem is being experienced?
       description: Please add the "crash report" (if encountered) or provide a clear and concise description of the problem.
-    validations:
-     required: true
+      validations:
+      required: true
 
   - type: textarea
     attributes:
@@ -60,19 +60,19 @@ body:
         1. First step
         2. Second step
         3. and so on...
-    validations:
+      validations:
       required: false
 
   - type: textarea
     attributes:
       label: Additional context
       description: Add screenshots etc. (Anything that will give us more context about the problem.)
-    validations:
+      validations:
       required: false
 
   - type: textarea
     attributes:
       label: Log & settings file(s)
       description: Please add the settings file and at least the most recent log. See ["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
-    validations:
+      validations:
       required: false
