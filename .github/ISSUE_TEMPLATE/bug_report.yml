@@ -12,7 +12,7 @@ body:
     attributes:
       label: Prerequisites
       description: |
-      To rule out invalid issues, confirm and check each one of the required checkboxes.
+        To rule out invalid issues, confirm and check each one of the required checkboxes.
       options:
       - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
         required: true
