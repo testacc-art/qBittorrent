@@ -12,7 +12,7 @@ body:
      label: Prerequisites
      description: |
       To rule out invalid issues, confirm and check each one of the required checkboxes.
-      options:
+     options:
       - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
       required: true
       - label: I have verified that the issue is not fixed and is reproducible in the **[latest version](https://www.qbittorrent.org/download.php).**
@@ -73,7 +73,7 @@ body:
     attributes:
       label: Log & settings file(s)
       description: |
-        It is the responsibility of the user to **redact any sensitive information** in logs/config files.
+        NOTE: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
         Example:
         settings file: (`qBittorrent.ini` on Windows)
         log files: (`qBitorrent.log`- at least the most recent one)
