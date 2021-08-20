@@ -3,7 +3,7 @@ description: File a bug report to help improve qBittorrent user experience.
 body:
   - type: markdown
     attributes:
-      description: |    
+      description: |
       label:
       #### ADVISORY
       "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
