@@ -76,10 +76,6 @@ body:
   - type: textarea
     attributes:
       id: Logs & settings file(s)    
-      label: |
-       `qBitorrent.log`
-       `qBittorrent.ini`
-       `watched_folders.json` file (if you use the "Watched Folders" feature)
       description: |
         **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
     validations:
