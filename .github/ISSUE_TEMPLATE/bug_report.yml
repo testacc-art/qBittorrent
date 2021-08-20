@@ -42,14 +42,14 @@ body:
         Qt:
         libtorrent-rasterbar:
     validations:
-    required: true
+     required: true
 
   - type: textarea
     attributes:
       label: What problem is being experienced?
       description: Please add the "crash report" (if encountered) or give a clear and concise description of problem.
     validations:
-    required: true
+     required: true
 
   - type: textarea
     attributes:
@@ -60,14 +60,14 @@ body:
         2. Second step
         3. and so on...
     validations:
-    required: false
+     required: false
 
   - type: textarea
     attributes:
       label: Additional context
       description: Add screenshots etc. (Anything that will provide more context about the problem)
     validations:
-    required: false
+     required: false
 
   - type: textarea
     attributes:
@@ -84,4 +84,4 @@ body:
         qBitorrent.log:
         watched_folders.json:
     validations:
-    required: false
+     required: false
