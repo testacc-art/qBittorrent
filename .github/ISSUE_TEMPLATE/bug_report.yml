@@ -3,15 +3,13 @@ description: File a bug report to help improve qBittorrent user experience.
 body:
   - type: markdown
     attributes:
-      label: |
-        #### ADVISORY
-        "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+      label: #### ADVISORY
+             "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
 
   - type: checkboxes
     attributes:
       label: Prerequisites
-      description: |
-        To rule out invalid issues, confirm and check each one of the required checkboxes.
+      description: To rule out invalid issues, confirm and check each one of the required checkboxes.
       options:
         - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
           required: true
