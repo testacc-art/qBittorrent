@@ -70,7 +70,7 @@ body:
 
   - type: textarea
     attributes:
-      id: Logs & settings file(s)
+      label: Logs & settings file(s)
       description: |
         **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
     validations:
