@@ -23,15 +23,20 @@ body:
           required: true
         - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
           required: true
-        - label: (optional but may be requested) I have added/will add under the Logs & settings file(s) section, the (redacted) settings file(s) `qBittorrent.ini`/`watched_folders.json` (if the "Watched Folders" feature is being used) and most recent log (`qBitorrent.log`) needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
-          required: false
+        - label: (optional but may be requested) I have added/will add under the Logs & settings file(s) section, the (redacted) settings file(s) and most recent log needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+        description: |
+          Logs & settings file(s):
+          `qBittorrent.ini`
+          `watched_folders.json` (if using the "Watched Folders" feature)
+          `qBitorrent.log`
+        required: false
 
   - type: textarea
     attributes:
       label: qBittorrent & operating system versions
       description: |
         Qt and libtorrent-rasterbar versions are required when: 1. You are using linux. 2. You are not using an official build downloaded from our website.
-        Example: 
+        Example:
         qBittorrent: 4.3.7 x64
         Operating system: Windows 10 Pro 21H1/2009 x64
         Qt: 5.15.2
