@@ -3,15 +3,15 @@ description: File a bug report to help improve qBittorrent user experience.
 body:
   - type: markdown
     attributes:
-    value: |
-      #### ADVISORY
-      "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
-      It is the responsibility of the user to **redact any sensitive information** in logs/config files.
+      value: |
+        #### ADVISORY
+        "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+        It is the responsibility of the user to **redact any sensitive information** in logs/config files.
   - type: checkboxes
     attributes:
-    label: Prerequisites
-      description: |
-        To rule out invalid issues, confirm and check each one of the required checkboxes.
+     label: Prerequisites
+     description: |
+      To rule out invalid issues, confirm and check each one of the required checkboxes.
       options:
       - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
       required: true
@@ -75,9 +75,13 @@ body:
       description: |
         It is the responsibility of the user to **redact any sensitive information** in logs/config files.
         Example:
-        - the settings file (`qBittorrent.ini` on Windows)
-        - log files (`qBitorrent.log`- at least the most recent one)
-        - the `watched_folders.json` file (if you use the "Watched Folders" feature)
+        settings file: (`qBittorrent.ini` on Windows)
+        log files: (`qBitorrent.log`- at least the most recent one)
+        watched folder config: `watched_folders.json` file (if you use the "Watched Folders" feature)
         See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings)** if you're not sure where to find them.
+      value: |
+       qBittorrent.ini:
+       qBitorrent.log:
+       watched_folders.json:
     validations:
      required: false
