@@ -3,7 +3,7 @@ description: File a bug report to help improve qBittorrent user experience.
 body:
   - type: markdown
     attributes:
-      value: |
+      label: |
         #### ADVISORY
         "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
 
@@ -25,11 +25,6 @@ body:
           required: true
         - label: (optional but may be requested) I have added/will add under the Logs & settings file(s) section, the (redacted) settings file(s) and most recent log needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: false
-      description: |
-        Logs & settings file(s):
-        `qBittorrent.ini`
-        `watched_folders.json` (if using the "Watched Folders" feature)
-        `qBitorrent.log`
 
   - type: textarea
     attributes:
