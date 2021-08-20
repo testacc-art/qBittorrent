@@ -3,8 +3,10 @@ description: File a bug report to help improve qBittorrent user experience.
 body:
   - type: markdown
     attributes:
-      label: #### ADVISORY
-             "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+      description: |    
+      label:
+      #### ADVISORY
+      "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
 
   - type: checkboxes
     attributes:
@@ -69,17 +71,9 @@ body:
 
   - type: textarea
     attributes:
-      label: Log & settings file(s)
+      id: Logs & settings file(s):    
+      label: `qBitorrent.log`/`qBittorrent.ini`/`watched_folders.json` file (if you use the "Watched Folders" feature)
       description: |
         **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
-        Example:
-        settings file: (`qBittorrent.ini` on Windows)
-        log files: (`qBitorrent.log` - at least the most recent one)
-        watched folder config: `watched_folders.json` file (if you use the "Watched Folders" feature)
-        See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings)** if you're not sure where to find them.
-      value: |
-        `qBittorrent.ini:`
-        `qBitorrent.log:`
-        `watched_folders.json:`
     validations:
       required: false
