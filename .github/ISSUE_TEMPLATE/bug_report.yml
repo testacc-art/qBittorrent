@@ -9,22 +9,22 @@ body:
         It is the responsibility of the user to **redact any sensitive information** in logs/config files.
   - type: checkboxes
     attributes:
-     label: Prerequisites
-     description: |
-      To rule out invalid issues, confirm and check each one of the required checkboxes.
-     options:
-      - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
-      required: true
-      - label: I have verified that the issue is not fixed and is reproducible in the **[latest version](https://www.qbittorrent.org/download.php).**
-      required: true
-      - label: (optional but recommended) I have verified that the issue is not fixed and is reproducible in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
-      required: false
-      - label: I have checked the **[frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and performed a **[search of the issue tracker (including closed ones)](https://github.com/qbittorrent/qBittorrent/issues)** to avoid posting a duplicate.
-      required: true
-      - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
-      required: true
-      - label: (optional but may be requested) If relevant to issue or when asked by a **team member**, I will add the needed settings file and log(s) in the Logs & settings file(s) section at the bottom of the report. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
-      required: false
+      label: Prerequisites
+      description: |
+        To rule out invalid issues, confirm and check each one of the required checkboxes.
+      options:
+        - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
+          required: true
+        - label: I have verified that the issue is not fixed and is reproducible in the **[latest version](https://www.qbittorrent.org/download.php).**
+          required: true
+        - label: (optional but recommended) I have verified that the issue is not fixed and is reproducible in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
+          required: false
+        - label: I have checked the **[frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and performed a **[search of the issue tracker (including closed ones)](https://github.com/qbittorrent/qBittorrent/issues)** to avoid posting a duplicate.
+          required: true
+        - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
+          required: true
+        - label: (optional but may be requested) If relevant to issue or when asked by a **team member**, I will add the needed settings file and log(s) in the Logs & settings file(s) section at the bottom of the report. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings) if you're not sure where to find them.
+          required: false
 
   - type: textarea
     attributes:
