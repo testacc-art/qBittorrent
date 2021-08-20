@@ -7,6 +7,7 @@ body:
         #### ADVISORY
         "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
         It is the responsibility of the user to **redact any sensitive information** in logs/config files.
+
   - type: checkboxes
     attributes:
       label: Prerequisites
