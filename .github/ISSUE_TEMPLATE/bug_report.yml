@@ -4,9 +4,9 @@ body:
   - type: markdown
     attributes:
       description: |    
-        label:
-        #### ADVISORY
-        "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+      label:
+      #### ADVISORY
+      "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
 
   - type: checkboxes
     attributes:
