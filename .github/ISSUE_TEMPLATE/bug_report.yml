@@ -28,7 +28,7 @@ body:
         `qBitorrent.log`
         `qBittorrent.ini`
         `watched_folders.json` file (if you use the "Watched Folders" feature)
-          required: false
+      required: false
 
   - type: textarea
     attributes:
