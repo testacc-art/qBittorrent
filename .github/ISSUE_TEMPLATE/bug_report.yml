@@ -24,7 +24,7 @@ body:
   - type: checkboxes
     attributes:
       label: Optional prerequisites
-      options:      
+      options:
         - label: I have verified that the issue is not fixed and is reproducible in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
           required: false
         - label: I have added/will add the **qBittorrent.ini** under the Logs & settings file(s) section needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
@@ -84,8 +84,9 @@ body:
         **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
         See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
       placeholder: |
-        `qBittorrent.ini`
-        `watched_folders.json` (if using the "Watched Folders" feature)
-        `qBitorrent.log`
+        Copy and paste or drag and drop below mentioned files into this textarea:
+        qBittorrent.ini
+        watched_folders.json (if using the "Watched Folders" feature)
+        qBitorrent.log
     validations:
       required: false
