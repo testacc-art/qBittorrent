@@ -4,8 +4,8 @@ body:
   - type: markdown
     attributes:
       value: |
-       #### ADVISORY
-       "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+        #### ADVISORY
+        "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
 
   - type: checkboxes
     attributes:
@@ -22,7 +22,11 @@ body:
           required: true
         - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
           required: true
-        - label: (optional but may be requested) I have added/will add under the Logs & settings file(s) section, the (redacted) settings file(s) and most recent log needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+        - label: (optional but may be requested) I have added/will add the `qBittorrent.ini` under the Logs & settings file(s) section needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+          required: false
+        - label: (optional but may be requested) I have added/will add the most recent `qBitorrent.log` under the Logs & settings file(s) section needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+          required: false
+        - label: (optional but may be requested) I have added/will add the `watched_folders.json` (if using the "Watched Folders" feature) under the Logs & settings file(s) section needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: false
 
   - type: textarea
