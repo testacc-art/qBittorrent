@@ -6,7 +6,6 @@ body:
       value: |
         #### ADVISORY
         "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
-        It is the responsibility of the user to **redact any sensitive information** in logs/config files.
 
   - type: checkboxes
     attributes:
@@ -24,7 +23,7 @@ body:
           required: true
         - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
           required: true
-        - label: (optional but may be requested) If relevant to issue or when asked by a **team member**, I will add the needed settings file and log(s) in the Logs & settings file(s) section at the bottom of the report. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings)** if you're not sure where to find them.
+        - label: (optional but may be requested) I have added/will add under the Logs & settings file(s) section, the (redacted) settings file(s) `qBittorrent.ini`/`watched_folders.json` (if the "Watched Folders" feature is being used) and most recent log (`qBitorrent.log`) needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: false
 
   - type: textarea
@@ -43,14 +42,14 @@ body:
         Qt:
         libtorrent-rasterbar:
     validations:
-     required: true
+      required: true
 
   - type: textarea
     attributes:
       label: What problem is being experienced?
       description: Please add the "crash report" (if encountered) or give a clear and concise description of problem.
     validations:
-     required: true
+      required: true
 
   - type: textarea
     attributes:
@@ -61,14 +60,14 @@ body:
         2. Second step
         3. and so on...
     validations:
-     required: false
+      required: false
 
   - type: textarea
     attributes:
       label: Additional context
       description: Add screenshots etc. (Anything that will provide more context about the problem)
     validations:
-     required: false
+      required: false
 
   - type: textarea
     attributes:
@@ -85,4 +84,97 @@ body:
         qBitorrent.log:
         watched_folders.json:
     validations:
-     required: false
+      required: false
+
+```
+
+**Output:**
+<!-- prettier-ignore -->
+```yaml
+name: Bug Report
+description: File a bug report to help improve qBittorrent user experience.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        #### ADVISORY
+        "We do not support any versions older than the current release series" or 3rd party/forked versions e.g. `portableapps`/`Enhanced Edition`etc.
+
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To rule out invalid issues, confirm and check each one of the required checkboxes.
+      options:
+        - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
+          required: true
+        - label: I have verified that the issue is not fixed and is reproducible in the **[latest version](https://www.qbittorrent.org/download.php).**
+          required: true
+        - label: (optional but recommended) I have verified that the issue is not fixed and is reproducible in the **[latest CI build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci.yaml?query=branch%3Amaster+event%3Apush).**
+          required: false
+        - label: I have checked the **[frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and performed a **[search of the issue tracker (including closed ones)](https://github.com/qbittorrent/qBittorrent/issues)** to avoid posting a duplicate.
+          required: true
+        - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
+          required: true
+        - label: (optional but may be requested) I have added/will add under the Logs & settings file(s) section, the (redacted) settings file(s) `qBittorrent.ini`/`watched_folders.json` (if the "Watched Folders" feature is being used) and most recent log (`qBitorrent.log`) needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+          required: false
+
+  - type: textarea
+    attributes:
+      label: qBittorrent & operating system versions
+      description: |
+        Qt and libtorrent-rasterbar versions are required when: 1. You are using linux. 2. You are not using an official build downloaded from our website.
+        Example: 
+        qBittorrent: 4.3.7 x64
+        Operating system: Windows 10 Pro 21H1/2009 x64
+        Qt: 5.15.2
+        libtorrent-rasterbar: 1.2.14
+      value: |
+        qBittorrent:
+        Operating system:
+        Qt:
+        libtorrent-rasterbar:
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What problem is being experienced?
+      description: Please add the "crash report" (if encountered) or give a clear and concise description of problem.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Please provide reliable steps to reproduce the problem.
+      placeholder: |
+        1. First step
+        2. Second step
+        3. and so on...
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add screenshots etc. (Anything that will provide more context about the problem)
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Log & settings file(s)
+      description: |
+        **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
+        Example:
+        settings file: (`qBittorrent.ini` on Windows)
+        log files: (`qBitorrent.log` - at least the most recent one)
+        watched folder config: `watched_folders.json` file (if you use the "Watched Folders" feature)
+        See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings)** if you're not sure where to find them.
+      value: |
+        qBittorrent.ini:
+        qBitorrent.log:
+        watched_folders.json:
+    validations:
+      required: false
