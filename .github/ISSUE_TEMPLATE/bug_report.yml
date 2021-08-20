@@ -84,7 +84,7 @@ body:
         **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
         See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
       placeholder: |
-        Copy and paste or drag and drop below mentioned files into this textarea:
+        Attach below mentioned files into this textarea:
         qBittorrent.ini
         watched_folders.json (if using the "Watched Folders" feature)
         qBitorrent.log
