@@ -76,7 +76,7 @@ body:
         **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
         Example:
         settings file: (`qBittorrent.ini` on Windows)
-        log files: (`qBitorrent.log`- at least the most recent one)
+        log files: (`qBitorrent.log` - at least the most recent one)
         watched folder config: `watched_folders.json` file (if you use the "Watched Folders" feature)
         See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings)** if you're not sure where to find them.
       value: |
