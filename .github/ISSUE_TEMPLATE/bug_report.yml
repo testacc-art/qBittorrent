@@ -54,7 +54,6 @@ body:
     validations:
       required: true
 
-body:
 - type: textarea
   id: repro
   attributes:
