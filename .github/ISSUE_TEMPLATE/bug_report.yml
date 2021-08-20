@@ -84,4 +84,4 @@ body:
        qBitorrent.log:
        watched_folders.json:
     validations:
-     required: false
+      required: false
