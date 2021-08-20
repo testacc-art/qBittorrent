@@ -24,9 +24,7 @@ body:
         - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
           required: true
         - label: (optional but may be requested) I have added/will add under the Logs & settings file(s) section, the (redacted) settings file(s) and most recent log needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
-        - `qBitorrent.log`
-        - `qBittorrent.ini`
-        - `watched_folders.json` file (if you use the "Watched Folders" feature)
+
       required: false
 
   - type: textarea
