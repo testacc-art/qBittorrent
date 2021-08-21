@@ -48,7 +48,7 @@ body:
         Operating system: Windows 10 Pro 21H1/2009 x64
         Qt: 5.15.2
         libtorrent-rasterbar: 1.2.14
-      value: |
+      placeholder: |
         qBittorrent:
         Operating system:
         Qt:
@@ -86,10 +86,9 @@ body:
       label: Logs & settings file(s)
       description: |
         **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
-        Attach files mentioned below:
+        Attach files mentioned below: See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
         qBittorrent.ini
         qBitorrent.log
         watched_folders.json (if using the "Watched Folders" feature)
-        See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**        
     validations:
       required: false
