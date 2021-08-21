@@ -1,4 +1,5 @@
 blank_issues_enabled: false
+
 contact_links:
   -
     about: "Consult the wiki first (especially the FAQ), it might already contain the information you are looking for"
@@ -14,6 +15,7 @@ contact_links:
     about: "Alternatively, ask on the official forum"
     name: Question
     url: "http://forum.qbittorrent.org/"
+
   -
     about: "Alternatively, use the subreddit"
     name: Question
