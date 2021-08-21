@@ -20,7 +20,7 @@ jobs:
         uses: lukka/run-vcpkg@v7
         with:
           vcpkgDirectory: C:/vcpkg
-          vcpkgGitCommitId: 8dddc6c899ce6fdbeab38b525a31e7f23cb2d5bb  # dummy value for lukka/run-vcpkg
+          vcpkgGitCommitId: e4ce66eecfd3e5cca5eac06c971921bf8e37cf88  # dummy value for lukka/run-vcpkg
           doNotUpdateVcpkg: true  # the preinstalled vcpkg is updated regularly
           setupOnly: true
 
