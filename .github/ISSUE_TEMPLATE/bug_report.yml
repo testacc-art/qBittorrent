@@ -14,17 +14,19 @@ body:
       options:
         - label: I have read the issue reporting section in the **[contributing guidelines](https://github.com/qbittorrent/qBittorrent/blob/master/CONTRIBUTING.md)**, so I know how to submit a good bug report with the required information.
           required: true
-        - label: I have verified that the issue is not fixed and is reproducible in the **[latest version](https://www.qbittorrent.org/download.php).**
+        - label: I have verified that the issue is not fixed and is reproducible in the **[latest official qBittorrent version](https://www.qbittorrent.org/download.php).**
           required: true
         - label: I have checked the **[frequent/common issues list](https://github.com/qbittorrent/qBittorrent/projects/2)** and performed a **[search of the issue tracker (including closed ones)](https://github.com/qbittorrent/qBittorrent/issues)** to avoid posting a duplicate.
           required: true
         - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
           required: true
-        - label: I understand that if relevant to the issue or when asked, I will provide the **qBittorrent.ini** file under the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+      description: **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
+      options:          
+        - label: I understand that if relevant to issue/when asked, I will provide the **qBittorrent.ini** file under the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: true
-        - label: I understand that if relevant to the issue or when asked, I will provide the **qBittorrent.log** file under the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+        - label: I understand that if relevant to issue/when asked, I will provide the **qBittorrent.log** file under the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: true
-        - label: I understand that if relevant to the issue or when asked, I will provide the **watched_folders.json** (if using the "Watched Folders" feature) file under the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
+        - label: I understand that if relevant to issue/when asked, I will provide the **watched_folders.json** file (if using the "Watched Folders" feature) the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: true
 
   - type: checkboxes
