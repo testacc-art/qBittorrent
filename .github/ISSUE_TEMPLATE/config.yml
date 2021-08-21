@@ -3,12 +3,12 @@ contact_links:
   -
     about: "File a bug report to help improve qBittorrent user experience."
     name: Bug Report
-    url: "https://github.com/xavier2k6/qBittorrent/issues/new?assignees=&labels=&template=bug_report.yml"
+    url: "https://github.com/xavier2k6/qBittorrent/issues/new"
 
   -
     about: "Suggest a new feature or enhancement for qBittorrent."
     name: Feature Request
-    url: "https://github.com/xavier2k6/qBittorrent/issues/new?assignees=&labels=Feature+request&template=feature_request.yml"
+    url: "https://github.com/xavier2k6/qBittorrent/issues/new"
 
   -
     about: "Consult the wiki first (especially the FAQ), it might already contain the information you are looking for"
