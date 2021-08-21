@@ -1,16 +1,6 @@
 blank_issues_enabled: false
 contact_links:
   -
-    about: "File a bug report to help improve qBittorrent user experience."
-    name: Bug Report
-    url: "https://github.com/xavier2k6/qBittorrent/issues/new"
-
-  -
-    about: "Suggest a new feature or enhancement for qBittorrent."
-    name: Feature Request
-    url: "https://github.com/xavier2k6/qBittorrent/issues/new"
-
-  -
     about: "Consult the wiki first (especially the FAQ), it might already contain the information you are looking for"
     name: Wiki
     url: "https://github.com/qbittorrent/qBittorrent/wiki/"
@@ -24,6 +14,7 @@ contact_links:
     about: "Alternatively, ask on the official forum"
     name: Question
     url: "http://forum.qbittorrent.org/"
+
   -
     about: "Alternatively, use the subreddit"
     name: Question
