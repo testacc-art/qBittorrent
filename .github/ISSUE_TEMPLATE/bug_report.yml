@@ -20,22 +20,23 @@ body:
           required: true
         - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
           required: true
+        - label: I understand that if relevant to the issue or when asked, I will provide the **qBittorrent.ini** file under the Logs & settings file(s) section. See "Where does qBittorrent save its settings".
+          required: true
+        - label: I understand that if relevant to the issue or when asked, I will provide the **qBittorrent.log** file under the Logs & settings file(s) section. See "Where does qBittorrent save its settings".
+          required: true
+        - label: I understand that if relevant to the issue or when asked, I will provide the **watched_folders.json** (if using the "Watched Folders" feature) file under the Logs & settings file(s) section. See "Where does qBittorrent save its settings".
+          required: true
 
   - type: checkboxes
     attributes:
       label: Optional prerequisites
+      description: Confirm and check each one of the applicable checkboxes.
       options:
         - label: I have verified that the issue is not fixed and is reproducible in the **[latest CI macOS build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_macos.yaml?query=branch%3Amaster+event%3Apush).**
           required: false
         - label: I have verified that the issue is not fixed and is reproducible in the **[latest CI Ubuntu build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_ubuntu.yaml?query=branch%3Amaster+event%3Apush).**
           required: false
         - label: I have verified that the issue is not fixed and is reproducible in the **[latest CI Windows build](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_windows.yaml?query=branch%3Amaster+event%3Apush).**
-          required: false
-        - label: I have added/will add the **qBittorrent.ini** under the Logs & settings file(s) section needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
-          required: false
-        - label: I have added/will add the most recent **qBitorrent.log** under the Logs & settings file(s) section needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
-          required: false
-        - label: I have added/will add the **watched_folders.json** (if using the "Watched Folders" feature) under the Logs & settings file(s) section needed if relevant to the issue or when asked by a team member. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: false
 
   - type: textarea
