@@ -4,7 +4,7 @@ on: [pull_request, push]
 jobs:
   ci:
     name: Build
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
@@ -20,7 +20,6 @@ jobs:
         uses: lukka/run-vcpkg@v7
         with:
           vcpkgDirectory: C:/vcpkg
-          vcpkgGitCommitId: e4ce66eecfd3e5cca5eac06c971921bf8e37cf88  # dummy value for lukka/run-vcpkg
           doNotUpdateVcpkg: true  # the preinstalled vcpkg is updated regularly
           setupOnly: true
 
