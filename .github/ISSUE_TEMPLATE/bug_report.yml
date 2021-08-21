@@ -21,7 +21,7 @@ body:
         - label: This is not a support request or question, both of which are better suited for either the **[discussions section](https://github.com/qbittorrent/qBittorrent/discussions)**, **[forum](https://qbforums.shiki.hu/)**, or **[subreddit](https://www.reddit.com/r/qBittorrent/)**. The **[wiki](https://github.com/qbittorrent/qBittorrent/wiki)** did not contain a suitable solution either.
           required: true
       description: **NOTE**: It is the responsibility of the user to **redact any sensitive information** in logs/config files.
-      options:          
+      options:
         - label: I understand that if relevant to issue/when asked, I will provide the **qBittorrent.ini** file under the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
           required: true
         - label: I understand that if relevant to issue/when asked, I will provide the **qBittorrent.log** file under the Logs & settings file(s) section. See **["Where does qBittorrent save its settings"](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions#Where_does_qBittorrent_save_its_settings).**
