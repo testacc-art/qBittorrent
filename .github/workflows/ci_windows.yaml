@@ -26,6 +26,7 @@ jobs:
           vcpkgDirectory: C:/vcpkg
           doNotUpdateVcpkg: true  # the preinstalled vcpkg is updated regularly
           setupOnly: true
+          doNotCache: true
 
       # tell vcpkg to only build Release variants of the dependencies
       - name: Configure vcpkg triplet overlay
