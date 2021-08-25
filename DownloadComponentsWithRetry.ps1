@@ -54,12 +54,9 @@ $BootstrapperName = [IO.Path]::GetFileName($BootstrapperUrl)
 $bootstrapperFilePath = Start-DownloadWithRetry -Url $BootstrapperUrl -Name $BootstrapperName
 $WorkLoads = @(
     "--add Microsoft.VisualStudio.Component.VC.v141.ATL",
-    "--add Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre",
-    "--add Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre",
     "--add Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre",
     "--add Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre",
     "--add Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre",
-    "--add Microsoft.VisualStudio.Component.VC.14.25.x86.x64",
     "--add Microsoft.VisualStudio.Component.VC.ATLMFC",
     "--add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre",
     "--add Microsoft.VisualStudio.Component.VC.MFC.ARM",
