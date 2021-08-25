@@ -53,8 +53,6 @@ $bootstrapperUrl = "https://aka.ms/vs/${subVersion}/${channel}/vs_${releaseInPat
 $BootstrapperName = [IO.Path]::GetFileName($BootstrapperUrl)
 $bootstrapperFilePath = Start-DownloadWithRetry -Url $BootstrapperUrl -Name $BootstrapperName
 $WorkLoads = @(
-    "--add Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre",
-    "--add Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre",
     "--add Microsoft.VisualStudio.Component.VC.v141.ATL",
     "--add Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre",
     "--add Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre",
@@ -67,7 +65,13 @@ $WorkLoads = @(
     "--add Microsoft.VisualStudio.Component.VC.MFC.ARM",
     "--add Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre",
     "--add Microsoft.VisualStudio.Component.VC.MFC.ARM64",
-    "--add Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre"
+    "--add Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre",
+    "--add Microsoft.VisualStudio.Component.VC.ATL.ARM",
+    "--add Microsoft.VisualStudio.Component.VC.ATL.ARM64",
+    "--add Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre",
+    "--add Microsoft.VisualStudio.Component.VC.ATL.Spectre",
+    "--add Microsoft.VisualStudio.Component.VC.ATLMFC",
+    "--add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre"
 )
 $workLoadsArgument = [String]::Join(" ", $workLoads)
 
