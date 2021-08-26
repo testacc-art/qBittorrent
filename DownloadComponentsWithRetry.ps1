@@ -52,7 +52,9 @@ $bootstrapperUrl = "https://aka.ms/vs/${subVersion}/${channel}/vs_${releaseInPat
 
 $BootstrapperName = [IO.Path]::GetFileName($BootstrapperUrl)
 $bootstrapperFilePath = Start-DownloadWithRetry -Url $BootstrapperUrl -Name $BootstrapperName
-$WorkLoads = @()
+$WorkLoads = @(
+     "--add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre"
+)
 $workLoadsArgument = [String]::Join(" ", $workLoads)
 
 Write-Host "Starting Install ..."
