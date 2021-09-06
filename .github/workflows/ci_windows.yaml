@@ -14,9 +14,9 @@ jobs:
         run: |
           choco install ninja
           
-      - name: Install components 
-        shell: pwsh
-        run: ./DownloadComponentsWithRetry.ps1
+#       - name: Install components 
+#         shell: pwsh
+#         run: ./DownloadComponentsWithRetry.ps1
 
       # use the preinstalled vcpkg from image
       # https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md#package-management
